@@ -1,5 +1,4 @@
-# FastQC-batch-QC-of-sequencing-reads-
-# FastQC Batch QC
+# Batch QC of sequencing reads by FastQC
 
 A lightweight Bash code for running [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 on multiple `.fastq.gz` files and generating a tab-delimited QC summary.
