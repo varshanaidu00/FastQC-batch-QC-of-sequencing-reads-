@@ -1,7 +1,7 @@
 # FastQC-batch-QC-of-sequencing-reads-
 # FastQC Batch QC
 
-A lightweight Bash pipeline for running [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
+A lightweight Bash code for running [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 on multiple `.fastq.gz` files and generating a tab-delimited QC summary.
 
 ## Features
@@ -31,3 +31,17 @@ Check FastQC:
 
 ```bash
 fastqc --version
+````
+Output is a txt summary file, which extracts the following information from FastQC analyses
+
+| Parameter            | Description                                  |
+| -------------------- | -------------------------------------------  |
+| `samples`            | The name/identifier of the sequencing sample |
+| `Total_Reads`        | The total number of sequencing reads/sequence records analysed by FastQC |
+| `Unique_Reads`       | The estimated number of reads that are not duplicates based on FastQC's deduplication percentage                    |
+| `Duplicate_Reads`    | The estimated number of reads identified as duplicates based on FastQC's deduplication percentage                |
+| `Pct_Duplicates(%)`  | The estimated percentage of reads that are duplicates       |
+| `Avg_Q_Score`        | The average Phred quality score across the sequencing reads |
+| `Pct_Q30(%)`         | The percentage of base positions with a mean quality score of Q30 or higher |
+| `GC_Content(%)`      | The percentage of guanine (G) and cytosine (C) bases in the sequences    |
+| `Sequence_length`    | The length of the sequencing reads, or the range of read lengths when reads are variable in length                      |
